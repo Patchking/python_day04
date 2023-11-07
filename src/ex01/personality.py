@@ -35,7 +35,6 @@ def turrets_generator(count):
     for i in range(count):
         yield create_turret_class()()
 
-# Example usage
 def main():
     turret_generator = turrets_generator(10)
     turret_instance = next(turret_generator)
